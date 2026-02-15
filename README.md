@@ -3,7 +3,7 @@
 ### Compile
 
 ```bash
-go build -ldflags="-s -w" -o nm_host nm_go.go
+go build -ldflags="-s -w" -o nm_go nm_go.go
 ```
 
 ### Installation and usage on Chrome and Chromium
