@@ -2,8 +2,15 @@
 
 ### Compile
 
+#### Native executable
 ```bash
-go build -ldflags="-s -w" -o nm_go nm_go.go
+go build -ldflags="-s -w" -a -o nm_go nm_go.go
+```
+
+#### WASM with WASI support
+
+```bash
+GOOS=wasip1 GOARCH=wasm go build -ldflags="-s -w" -a -o nm_go.wasm nm_go.go
 ```
 
 ### Installation and usage on Chrome and Chromium
